@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d6808c894b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <nav>
+            <!-- <img src="img/logo.png" class="logo"> -->
+            <div class="logo">Abby Chung</div>
+            <ul id="sidemenu">
+                <li><a href="./">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Feel free to <br><span>explore</span> my works<br>and <span>reach out</span>.</h1>
+            <p>Hi, I’m Abby—a former video editor now in the tech world.<br>Specialized in media solutions and products.</p>
+        </div>
+      </div>  
+    </div>
+    <!-- ----------About---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Product Manager with a background in a Toronto-based SaaS startup and AI-powered video localization tools. Previously led global teams and managed multiple key accounts as a Project Manager. Passionate about SaaS innovation and also exploring opportunities in the AI and Web3 space.</p>
+                    <!-- Tab titles and contents -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Product Management</span><br>Product roadmap planning, PRD writing, competitor analysis</li>
+                            <li><span>Software & Tools</span><br>Figma, Google Analytics, MySQL, Prompt Engineering, Notion</li>
+                            <li><span>Media</span><br>Video production/editing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - 2024</span><br>Product Manager, VideoLocalize, Inc. (Canada)</li>
+                            <li><span>2021 - 2023</span><br>Project Manager, VideoLocalize, Inc. (Canada)</li>
+                            <li><span>2020 - 2021</span><br>Multimedia Localization Engineer, Boffin Language Group, Inc. (Canada)</li>
+                            <li><span>2018 - 2019</span><br>Video Producer, Unseen Film Studio (Taiwan)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 2020</span><br>Centennial College: Advanced Film/TV Production</li>
+                            <li><span>2013 - 2017</span><br>National ChengChi University: B.A. Radion & Television</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----Portfolio----- -->
+    <div id="portfolio">
+       <div class="container">
+           <h1 class="sub-title">My Work</h1>
+           <div class="work-list">
+               <div class="work">
+                   <img src="img/work-1.jpg">
+                   <div class="layer">
+                       <h2>Product</h2>
+                       <h3>SSML Feature Enhancement for Text to Speech</h3>
+                       <p>Improve user experience and productivity by integrating advanced SSML editing capabilities within the exisiting video localization platform.</p>
+                       <a href="https://chungchiachen.notion.site/SSML-Feature-Enhancement-for-Text-to-Speech-10df19e6bed280bab0a1cb3d7925f5b4?pvs=4"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                   </div>
+               </div>
+               <div class="work">
+                   <img src="img/work-2.jpg">
+                   <div class="layer">
+                       <h2>MVP</h2>
+                       <h3>VideoDub AI</h3>
+                       <p>VideoDub AI is a tool that can automatically translate and dub videos in users’ preferred languages.</p>
+                       <a href="https://chungchiachen.notion.site/VideoDub-AI-10df19e6bed280fbbd0cf52cb4fa5b44?pvs=4"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                   </div>
+               </div>
+               <div class="work">
+                   <img src="img/work-3.jpg">
+                   <div class="layer">
+                       <h2>Product Strategy</h2>
+                       <h3>AI Voice QA</h3>
+                       <p>The AI Voice QA Service strengthens the company's market competitiveness by leveraging advanced SSML features to elevate Text-to-Speech (TTS) quality.</p>
+                       <a href="https://chungchiachen.notion.site/AI-Voice-QA-Service-10ff19e6bed2800695eadb75a5d712eb?pvs=4"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                   </div>
+               </div>
+           </div>
+           <a href="https://chungchiachen.notion.site/10df19e6bed280d29b81e33cc9ae7f42?v=13df19e6bed2804a9175000c90107def&pvs=4" class="btn">See more</a>
+       </div>
+    </div>
+    <!-- -----Certicficates need to update all class names and id----- -->
+    <div id="certificates">
+        <div class="container">
+            <h1 class="sub-title">Certificates & Skills</h1>
+            <div class="certificates-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Product Management</h2>
+                    <p>Completed the course Advanced Product Management: Vision, Strategy & Metrics</p>
+                    <a href="https://www.udemy.com/certificate/UC-1fa527bd-8eec-424e-a11b-2ff53fe584a1/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-object-group"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Completed the course Complete Web & Mobile Designer: UI/UX, Figma, HTML, and CSS</p>
+                    <a href="https://www.udemy.com/certificate/UC-65a6bde0-49af-4f95-89a0-871d90846190/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h2>Google Analytics</h2>
+                    <p>Completed and is certified in Google Analytics Certification</p>
+                    <a href="https://skillshop.credential.net/e2b8c998-3486-4ccd-9faf-478cd4cfbac1#acc.5rwoRLl2">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----- Contact ----- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <!-- <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p> -->
+                    <!-- <p><i class="fa-solid fa-phone"></i> 0123456789</p> -->
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/chung__ccc/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/abbychung/"><i class="fa-brands fa-linkedin"></i></a>
+                        <!-- <a href="img/my-cv.pdf"><i class="fa-regular fa-file-pdf"></i></i></a> -->
+                        <a href="img/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <!-- <a href="img/my-cv.pdf" download class="btn btn2">Download CV</a> -->
+                </div>
+                <div class="contact-right">
+                    <!-- <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form> -->
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i> CHIA-CHEN CHUNG, 2024</p>
+        </div>
+    </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
